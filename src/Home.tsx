@@ -12,10 +12,12 @@ function generateRoomUrl() {
 }
 
 function Home(props: any) {
-    
+
     return (
         <div>
-            <Link to={generateRoomUrl()}> Generate rooms! :-D </Link>
+            <Link to={generateRoomUrl()}>
+                <button type="button"></button>
+            </Link>
         </div>
     );
 }
