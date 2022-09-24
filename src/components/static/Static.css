@@ -1,0 +1,13 @@
+header , footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: tan;
+    padding: 0px 20px 0px 20px;
+}
+
+header {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+}
