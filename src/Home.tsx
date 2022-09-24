@@ -16,7 +16,7 @@ function Home(props: any) {
     return (
         <div>
             <Link to={generateRoomUrl()}>
-                <button type="button"></button>
+                <button type="button">Click to create a room</button>
             </Link>
         </div>
     );
