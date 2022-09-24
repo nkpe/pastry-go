@@ -5,6 +5,7 @@ header , footer {
     height: 50px;
     background-color: tan;
     padding: 0px 20px 0px 20px;
+    box-sizing: border-box;
 }
 
 header {

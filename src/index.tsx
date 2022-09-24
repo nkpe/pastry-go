@@ -4,8 +4,8 @@ import { BrowserRouter , Routes , Route} from 'react-router-dom';
 
 import './index.css';
 import App from './App';
-import Home from './Home';
-import Room from './Room';
+import Home from './components/pages/Home';
+import Room from './components/pages/room/Room';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
