@@ -1,0 +1,19 @@
+
+#room {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#room p {
+    width: 100%;
+    text-align: center;
+}
+
+#room #game-board-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+}

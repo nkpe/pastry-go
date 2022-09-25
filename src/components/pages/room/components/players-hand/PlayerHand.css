@@ -1,0 +1,10 @@
+#player-cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 5fr) 1fr;
+} 
+
+#playerHand {
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: 2 / 3;
+}
