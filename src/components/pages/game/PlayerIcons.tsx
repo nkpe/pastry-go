@@ -8,7 +8,7 @@ export default function PlayerIcons (props: any) {
         height: '30px',
         width: '30px',
         borderRadius: "50%",
-        backgroundColor:"red",
+        backgroundColor: props.colour,
         position: 'absolute',
         transform: `translate(${props.playerPosition.x}px, ${props.playerPosition.y}px)`
     };
