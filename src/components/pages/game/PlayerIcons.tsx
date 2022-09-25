@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export default function PlayerIcons ({playerId}:any) {
+export default function PlayerIcons ({playerId, playerMove}: any) {
+    // get the style
+
+
+
     return (
-        <div id={playerId} className="player-icons">
-
+        <div id={playerId} className="player-icons" style={{transform: playerMove}}>
         </div>
     )
 }
