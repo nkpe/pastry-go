@@ -22,6 +22,7 @@ export default function GameBoard() {
     };
 
     const [playerId, setPlayerId] = useState(generatePlayerId());
+    const [playerPosition, setPlayerPosition] = useState({x: 0, y: 0});
 
     let squares: any = [];
 
@@ -29,23 +30,22 @@ export default function GameBoard() {
     for (let i=0; i<squareNumber; i++) {
         squares.push(<BoardSquare key={i} id={i+1}/>);
     }
-    let x = 0;
-    let y = 0;
+
     const playerMove = () => {
-        const currentPlayer: any = document.getElementById(playerId as any);
-        currentPlayer.style.transform = `translate(${x * 75}px, ${y * 75}px)`;
-        if (x < 11) {
-            x++;
+        if (playerPosition.x < (75*11) && playerPosition.y < (75*5)) {
+            setPlayerPosition({x: playerPosition.x+75, y: 0});
+        } else if (playerPosition.y < (75*5)) {
+            setPlayerPosition({x:playerPosition.x, y: playerPosition.y+75});
         } else {
-            y++
+            setPlayerPosition({x:playerPosition.x - 75, y: playerPosition.y});
         }
-        
-        console.log("click working")
     }
+
+    console.log("MOVE PLAYER: " + playerPosition);
 
     return (
         <div id="game-board">
-            <PlayerIcons playerId={playerId}/>
+            <PlayerIcons playerId={playerId} playerPosition={playerPosition}/>
             {squares}
             <div id="game-inner">
                 <GameCardPlaceholder />
