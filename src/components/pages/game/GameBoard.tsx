@@ -56,22 +56,24 @@ export default function GameBoard() {
 
     let squares: any = [];
 
-    const squareNumber = 32;
-    for (let i = 0; i < squareNumber; i++) {
-        squares.push(<BoardSquare key={i} id={i + 1} />);
+    let numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ,12, 32, 13, 31, 14, 30, 15, 29, 16, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17];
+    for (let i=0; i<numbers.length; i++) {
+        squares.push(<BoardSquare key={i} id={numbers[i]}/>);
     }
 
     const playerMove = () => {
-        if (playerPosition.x < (75 * 11) && playerPosition.y < (75 * 5)) {
-            setPlayerPosition({ x: playerPosition.x + 75, y: 0 });
-        } else if (playerPosition.y < (75 * 5)) {
-            setPlayerPosition({ x: playerPosition.x, y: playerPosition.y + 75 });
+        if (playerPosition.x < (75*11) && playerPosition.y < (75*5)) {
+            setPlayerPosition({x: playerPosition.x+75, y: 0});
+        } else if (playerPosition.y < (75*5)) {
+            setPlayerPosition({x:playerPosition.x, y: playerPosition.y+75});
+        } else if (playerPosition.x > 0) {
+            setPlayerPosition({x:playerPosition.x - 75, y: playerPosition.y});
         } else {
-            setPlayerPosition({ x: playerPosition.x - 75, y: playerPosition.y });
+            setPlayerPosition({x:playerPosition.x, y: playerPosition.y-75});
         }
     }
 
-    console.log("MOVE PLAYER: " + playerPosition);
+    console.log("MOVE PLAYER: " + JSON.stringify(playerPosition));
 
     return (
         <div id="game-board">
