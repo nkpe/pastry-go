@@ -12,3 +12,18 @@ header {
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-size: 35px;
 }
+
+#header-logo {
+    height: 85%;
+    width: auto;
+    margin-left: 5px;
+}
+
+#header-logo img {
+    height: 100%;
+    width: auto;
+}
+
+footer {
+    margin-top: auto;
+}
