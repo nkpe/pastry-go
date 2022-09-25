@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./GameBoard.css";
 import PlayerIcons from "../game/PlayerIcons";
+import GameCardsDeck from './GameCards';
 function GameCardPlaceholder() {
     return (
         <div className="game-card-placeholder"></div>
@@ -54,6 +55,9 @@ export default function GameBoard() {
                 <GameCardPlaceholder />
             </div>
             <button onClick={playerMove}>Click Me!!</button>
+            <div id="player-cards-wrapper">
+                <GameCardsDeck />
+            </div>
         </div>
     )
 };
