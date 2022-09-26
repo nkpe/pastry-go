@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/pastry-go/static/css/main.c1894682.css",
+    "main.js": "/pastry-go/static/js/main.af2c763d.js",
+    "static/js/787.27178149.chunk.js": "/pastry-go/static/js/787.27178149.chunk.js",
+    "static/media/birthday-cake-512x512.png": "/pastry-go/static/media/birthday-cake-512x512.1162dea6c094217915a6.png",
+    "static/media/cherry-pie-512x512.png": "/pastry-go/static/media/cherry-pie-512x512.1a7b7a21863e74b8e3df.png",
+    "static/media/pretzel-512x512.png": "/pastry-go/static/media/pretzel-512x512.c618177121290ca419f9.png",
+    "static/media/croissant-512x512.png": "/pastry-go/static/media/croissant-512x512.3f751a5fa1a608c6e3b7.png",
+    "index.html": "/pastry-go/index.html",
+    "main.c1894682.css.map": "/pastry-go/static/css/main.c1894682.css.map",
+    "main.af2c763d.js.map": "/pastry-go/static/js/main.af2c763d.js.map",
+    "787.27178149.chunk.js.map": "/pastry-go/static/js/787.27178149.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1894682.css",
+    "static/js/main.af2c763d.js"
+  ]
+}
